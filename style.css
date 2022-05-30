@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  background-image: url(./images/illustration-hero.svg);
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  max-width: 450px;
+  margin: 7% auto;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-weight: 900;
+}
+
+h1+p {
+  max-width: 300px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.content {
+  margin: 0% 10%;
+  padding-top: 60%;
+  padding-bottom: 5%;
+}
+
+.content p {
+  text-align: center;
+  margin-bottom: 5%;
+  line-height: 1.5em;
+  opacity: 0.5;
+}
+
+.payment {
+  background-color: hsla(225, 100%, 94%, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 15px;
+  display: flex;
+  width: 100%;
+}
+
+.img {
+  margin: 0 15px 0;
+}
+
+.plan p {
+  margin-top: 3px;
+  font-size: 18px;
+}
+
+.payment a {
+  margin-left: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 900;
+}
+
+button {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  width: 100%;
+  padding: 4% 7%;
+  box-sizing: border-box;
+  margin: 10% 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: 900;
+  box-shadow: 0px 15px 20px 8px hsla(245, 75%, 52%, 0.2);
+}
+
+.order {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.order:hover {
+  cursor: pointer;
+  opacity: 1;
+  font-weight: 900;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 7s;
+}
+
+@media (max-width:375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    margin: 0% 10%;
+    padding-top: 65%;
+  }
+
+  .payment a {
+    margin-left: 22%;
+  }
+
+  h1+p {
+    max-width: 100px;
+  }
+}
